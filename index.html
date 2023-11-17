@@ -1,0 +1,18 @@
+By Denis R.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello SedgWick</title>
+    <script>
+        function afficherDate() {
+            var date = new Date();
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var dateDuJour = date.toLocaleDateString('en-US', options);
+            document.getElementById('date').innerText = dateDuJour;
+        }
+    </script>
+</head>
+<body onload="afficherDate()">
+    <h1>Hello SedgWick! Today is <span id="date"></span>. Have a good day ahead! 😉</h1>
+</body>
+</html>
